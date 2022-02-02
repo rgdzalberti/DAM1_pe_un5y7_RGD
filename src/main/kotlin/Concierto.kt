@@ -4,7 +4,22 @@ interface Interprete{
 
 }
 
-abstract class Musico(): Interprete{
+open class Musico(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Interprete{
+    private val instrumentoGenerico = instrumento
+
+    open var partitura: Array<Nota?> = unaCancion
+        set(value) {
+            field = value
+            instrumentoGenerico.reset()
+            value.forEach { nota ->
+                i("Pianista.setPartitura","incorpora nota $nota de canción")
+                nota?.let { instrumentoGenerico.incorporaNota(nota) }
+            }
+        }
+
+    init {
+        partitura = unaCancion
+    }
 
 }
 
@@ -41,6 +56,32 @@ abstract class Instrumento(){
         tabla.clear()
         for (i in 0 until cancionLenght) {tabla[i] = cancion[i]!!}
     }
+
+
+}
+
+class AlumnoMusica(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento):Interprete{
+
+    private val instrumentoGenerico = instrumento
+
+    var partitura: Array<Nota?> = unaCancion
+        set(value) {
+            field = value
+            instrumentoGenerico.reset()
+            value.forEach { nota ->
+                i("Pianista.setPartitura","incorpora nota $nota de canción")
+                nota?.let { instrumentoGenerico.incorporaNota(nota) }
+            }
+        }
+
+    init {
+        partitura = unaCancion
+    }
+
+    fun interpretar() {
+        println("#####Soy Alumno de Música#####")
+        instrumentoGenerico.play()
+    }
 }
 
 class Violin():Instrumento(){
@@ -73,7 +114,7 @@ class Violin():Instrumento(){
 
 
 fun main() {
-    val pianista = Pianista(melodia,Piano())
+    val pianista = Pianista()
     val cancion = arrayOf<Nota?>(Nota.DO, Nota.FA, Nota.FA, Nota.MI)
     pianista.partitura = cancion
     pianista.interpretar()

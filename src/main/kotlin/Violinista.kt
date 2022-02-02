@@ -1,8 +1,8 @@
-class Violinista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Musico() {
+class Violinista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Musico(unaCancion,instrumento) {
 
     private val violin = instrumento
 
-    var partitura: Array<Nota?> = unaCancion
+    override var partitura: Array<Nota?> = unaCancion
         set(value) {
             field = value
             violin.reset()
@@ -16,6 +16,9 @@ class Violinista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento:
         partitura = unaCancion
     }
 
-    fun interpretar() {}
+    fun interpretar() {
+        println("#####Soy Violinista#####")
+        violin.play()
+    }
 
 }
