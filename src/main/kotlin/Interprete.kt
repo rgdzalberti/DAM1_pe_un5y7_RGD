@@ -1,0 +1,3 @@
+interface Interprete{
+    fun interpretar() {}
+}
