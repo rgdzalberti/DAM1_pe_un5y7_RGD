@@ -14,7 +14,7 @@ abstract class Instrumento(){
         tabla.add(nota)
     }
 
-    open fun interpretar() {println()}
+    open fun interpretar() {}
 
     /**
      * reset no recibe ningún parametro. Se limita a borrar la melodía
