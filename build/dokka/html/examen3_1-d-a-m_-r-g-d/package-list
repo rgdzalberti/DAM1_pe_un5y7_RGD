@@ -1,0 +1,48 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/index.html
+$dokka.location://main/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/main.html
+$dokka.location:/AlumnoMusica///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-alumno-musica/index.html
+$dokka.location:/AlumnoMusica/AlumnoMusica/#kotlin.Array[Nota?]#Instrumento/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-alumno-musica/-alumno-musica.html
+$dokka.location:/AlumnoMusica/interpretar/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-alumno-musica/interpretar.html
+$dokka.location:/AlumnoMusica/partitura/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-alumno-musica/partitura.html
+$dokka.location:/Instrumento///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/index.html
+$dokka.location:/Instrumento/Instrumento/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/-instrumento.html
+$dokka.location:/Instrumento/incorporaCancion/#kotlin.Array[Nota?]/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/incorpora-cancion.html
+$dokka.location:/Instrumento/incorporaNota/#Nota/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/incorpora-nota.html
+$dokka.location:/Instrumento/interpretar/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/interpretar.html
+$dokka.location:/Instrumento/reset/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/reset.html
+$dokka.location:/Instrumento/tabla/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-instrumento/tabla.html
+$dokka.location:/Interprete///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-interprete/index.html
+$dokka.location:/Interprete/interpretar/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-interprete/interpretar.html
+$dokka.location:/Musico///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-musico/index.html
+$dokka.location:/Musico/Musico/#kotlin.Array[Nota?]#Instrumento/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-musico/-musico.html
+$dokka.location:/Musico/partitura/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-musico/partitura.html
+$dokka.location:/Nota.DO///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-d-o/index.html
+$dokka.location:/Nota.FA///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-f-a/index.html
+$dokka.location:/Nota.LA///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-l-a/index.html
+$dokka.location:/Nota.MI///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-m-i/index.html
+$dokka.location:/Nota.RE///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-r-e/index.html
+$dokka.location:/Nota.SI///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-s-i/index.html
+$dokka.location:/Nota.SOL///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/-s-o-l/index.html
+$dokka.location:/Nota///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-nota/index.html
+$dokka.location:/Pianista///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-pianista/index.html
+$dokka.location:/Pianista/Pianista/#kotlin.Array[Nota?]#Instrumento/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-pianista/-pianista.html
+$dokka.location:/Pianista/interpretar/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-pianista/interpretar.html
+$dokka.location:/Pianista/partitura/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-pianista/partitura.html
+$dokka.location:/Piano///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-piano/index.html
+$dokka.location:/Piano/Piano/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-piano/-piano.html
+$dokka.location:/Piano/incorporaNota/#Nota/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-piano/incorpora-nota.html
+$dokka.location:/Piano/play/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-piano/play.html
+$dokka.location:/Piano/reset/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-piano/reset.html
+$dokka.location:/Violin///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violin/index.html
+$dokka.location:/Violin/Violin/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violin/-violin.html
+$dokka.location:/Violin/incorporaNota/#Nota/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violin/incorpora-nota.html
+$dokka.location:/Violin/play/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violin/play.html
+$dokka.location:/Violin/reset/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violin/reset.html
+$dokka.location:/Violinista///PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violinista/index.html
+$dokka.location:/Violinista/Violinista/#kotlin.Array[Nota?]#Instrumento/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violinista/-violinista.html
+$dokka.location:/Violinista/interpretar/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violinista/interpretar.html
+$dokka.location:/Violinista/partitura/#/PointingToDeclaration/examen3_1-d-a-m_-r-g-d/[root]/-violinista/partitura.html
+
+
