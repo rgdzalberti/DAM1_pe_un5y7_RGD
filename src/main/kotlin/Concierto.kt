@@ -62,7 +62,7 @@ abstract class Instrumento(){
 
 }
 
-class AlumnoMusica(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento):Interprete{
+class AlumnoMusica(instrumento: Instrumento,unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0)):Interprete{
 
     private val instrumentoGenerico = instrumento
 
@@ -116,8 +116,11 @@ class Violin():Instrumento(){
 
 
 fun main() {
+
     val cancion = arrayOf<Nota?>(Nota.DO, Nota.FA, Nota.FA, Nota.MI)
-    val pianista = Pianista(cancion,Piano())
+    val pianista = Pianista(Piano(),cancion)
     pianista.partitura = cancion
     pianista.interpretar()
+
+
 }

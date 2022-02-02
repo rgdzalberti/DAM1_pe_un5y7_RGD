@@ -1,4 +1,4 @@
-class Pianista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Musico(unaCancion,instrumento) {
+class Pianista(instrumento: Instrumento, unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0)): Musico(unaCancion,instrumento) {
 
     private val piano: Instrumento = instrumento
 
