@@ -1,7 +1,7 @@
 import javax.sound.midi.Instrument
 
 interface Interprete{
-
+    fun interpretar() {}
 }
 
 open class Musico(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Interprete{
@@ -57,6 +57,8 @@ abstract class Instrumento(){
         for (i in 0 until cancionLenght) {tabla[i] = cancion[i]!!}
     }
 
+    abstract fun play()
+
 
 }
 
@@ -78,7 +80,7 @@ class AlumnoMusica(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrument
         partitura = unaCancion
     }
 
-    fun interpretar() {
+    override fun interpretar() {
         println("#####Soy Alumno de Música#####")
         instrumentoGenerico.play()
     }
@@ -88,7 +90,7 @@ class Violin():Instrumento(){
 
     private var melodia = mutableListOf<Nota>()
 
-    fun play() {
+    override fun play() {
         println("Tocando violín")
         melodia.forEach { nota ->
             when (nota) {
@@ -114,8 +116,8 @@ class Violin():Instrumento(){
 
 
 fun main() {
-    val pianista = Pianista()
     val cancion = arrayOf<Nota?>(Nota.DO, Nota.FA, Nota.FA, Nota.MI)
+    val pianista = Pianista(cancion,Piano())
     pianista.partitura = cancion
     pianista.interpretar()
 }

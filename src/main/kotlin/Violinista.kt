@@ -7,7 +7,7 @@ class Violinista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento:
             field = value
             violin.reset()
             value.forEach { nota ->
-                i("Pianista.setPartitura","incorpora nota $nota de canción")
+                i("Pianista.setPartitura", "incorpora nota $nota de canción")
                 nota?.let { violin.incorporaNota(nota) }
             }
         }
@@ -16,9 +16,9 @@ class Violinista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento:
         partitura = unaCancion
     }
 
-    fun interpretar() {
+    override fun interpretar() {
         println("#####Soy Violinista#####")
         violin.play()
     }
-
 }
+

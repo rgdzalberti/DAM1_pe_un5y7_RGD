@@ -16,7 +16,7 @@ class Pianista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: I
         partitura = unaCancion
     }
 
-    fun interpretar() {
+    override fun interpretar() {
         println("#####Soy Pianista#####")
         piano.play()
     }

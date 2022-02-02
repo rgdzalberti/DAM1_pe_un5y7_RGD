@@ -11,7 +11,7 @@ class Piano:Instrumento(){
     override fun reset() = melodia.clear()
 
     //Recorreremos las notas y las interpretaremos de la forma específica del piano.
-    fun play() {
+    override fun play() {
         println("Tocando piano")
         melodia.forEach { nota ->
             when (nota) {

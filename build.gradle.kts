@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.5.10"
     application
+    id("org.jetbrains.dokka") version "1.6.10"
 }
 
 group = "me.usuariot"
@@ -12,8 +13,11 @@ repositories {
     mavenCentral()
 }
 
+buildscript{
 dependencies {
-    testImplementation(kotlin("test"))
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${"1.5.10"}")
+    classpath("org.jetbrains.dokka:dokka-gradle-plugin:${"1.6.10"}")
+}
 }
 
 tasks.test {
