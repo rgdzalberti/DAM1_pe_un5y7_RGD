@@ -1,14 +1,14 @@
-class Pianista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Musico() {
+class Violinista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Musico() {
 
-    private val piano = instrumento
+    private val violin = instrumento
 
     var partitura: Array<Nota?> = unaCancion
         set(value) {
             field = value
-            piano.reset()
+            violin.reset()
             value.forEach { nota ->
                 i("Pianista.setPartitura","incorpora nota $nota de canción")
-                nota?.let { piano.incorporaNota(nota) }
+                nota?.let { violin.incorporaNota(nota) }
             }
         }
 

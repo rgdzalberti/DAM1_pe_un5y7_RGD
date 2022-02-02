@@ -1,14 +1,14 @@
 //Un piano es un instrumento que interpreta las notas con un timbre muy característico
-class Piano{
+class Piano:Instrumento(){
 
     //tabla que almacena las notas a interpretar
     private var melodia = mutableListOf<Nota>()
 
-    fun incorporaNota(nota: Nota) {
+    override fun incorporaNota(nota: Nota) {
         melodia.add(nota)
     }
 
-    fun reset() = melodia.clear()
+    override fun reset() = melodia.clear()
 
     //Recorreremos las notas y las interpretaremos de la forma específica del piano.
     fun play() {
@@ -26,4 +26,6 @@ class Piano{
         }
         println("")
     }
+
+
 }
