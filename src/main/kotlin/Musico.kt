@@ -1,5 +1,5 @@
 open class Musico(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0), instrumento: Instrumento): Interprete{
-    private val instrumentoGenerico = instrumento
+    protected val instrumentoGenerico = instrumento
 
     open var partitura: Array<Nota?> = unaCancion
         set(value) {
